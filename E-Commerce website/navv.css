@@ -1,0 +1,234 @@
+/*------------Yellow color : #FEBF0F--------------*/
+
+/*---------------Basic setup---------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/*------------------------------------Noor-style--------------------------------------*/
+header {   /*34an eb2a fe zhoor ll nav bar*/
+    background-color: #060505;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.navlogo {
+    margin-top: 10px;
+    margin-left: 4%;
+    height: 60px;
+    float: left; /*34an al logo eb2a el shmal*/
+}
+
+header h4 {
+    margin-top: 30px;
+    margin-left: 0.5%;
+    width: auto;
+    float: left;
+    color: rgb(255, 255, 255);
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 4%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 4px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 80%;
+    transition:  0.5s;
+}
+
+ul:hover li .a2{
+    transform:scale(1.5);
+    opacity:0.9;
+    filter:blur(5px);
+  }
+  
+ul li .a2:hover{
+    transform:scale(2);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+  }
+  
+ ul li .a2:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#FEBF0F;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+    border-radius: 10px;
+  }
+  
+ ul li .a2:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hometext{
+    margin-top: 400px;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+}
+
+.hometext p{
+    font-size: 90%;
+    padding-top: 2%;
+}
+
+.homebtn{
+    padding-top: 2%;
+}
+
+.homebtn1{
+    background-color:#FEBF0F;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 24px;
+    box-shadow: 0px 3px #00000026;
+    transition: 0.3s;
+}
+
+.homebtn2{
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 24px;
+    box-shadow: 0px 3px #00000026;
+    transition: 0.3s;    
+}
+
+.homebtn1:hover{
+    cursor: pointer;
+    background-color: #d6a10e;
+}
+
+.homebtn2:hover{
+    cursor: pointer;
+    background-color:#000000;
+    color: #fff;
+}
+
+.btna1{
+    font-size: 120%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btna2{
+    font-size: 120%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.btna2:hover{
+    color: rgb(255, 255, 255);
+}
+
+.homelogo{
+    margin-top: 400px;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hlogo{
+    height: 238px;
+}
+
+.circlehome1{
+    width: 500px;
+    height: 500px;
+    background-color: #FDA700;
+    position: absolute;
+    animation-name: circlehome1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    top: 260px;
+    right: 1%;
+    border-radius: 50%;
+    z-index: -1;  
+}
+
+@keyframes circlehome1{
+    0% {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+}
+
+.circlehome2{
+    width: 100px;
+    height: 100px;
+    background-color: #FDA700;
+    position: absolute;
+    animation-name: circlehome2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    top: 400px;
+    left: 3.5%;
+    border-radius: 10px 40px 10px 40px;
+    z-index: -1;  
+}
+
+@keyframes circlehome2{
+    0% {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+}

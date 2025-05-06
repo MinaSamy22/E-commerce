@@ -1,0 +1,438 @@
+/*------------Yellow color : #FEBF0F--------------*/
+
+/*---------------Basic setup---------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+section{
+    display: block;
+    margin-bottom: 300px;
+}
+/*------------------------------------minaa nav bar--------------------------------------*/
+/* عشان الخط الشكل الي فوق ينتهي بنهاية الشاشة الجانبية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+   
+   body {
+    font-family: 'Lato', 'Arial', sans-serif}
+   
+   /* عشان ميحطش سطر تحت كل واحة في النافيجيشن */
+   a {
+    text-decoration: none;}
+   
+   /*عشان مينقطش جمب كل واحدة */
+   li {
+    list-style: none;}
+   
+   
+   /* NAVBAR STYLING STARTS */
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(0,0,0);
+    color: #fff;
+   }
+   /*لون الكلام في البار */
+   .nav-links a {
+    color: white;}
+   
+   /* LOGO */
+   .navlogo{
+       margin-top: 10px;
+       margin-right: 10px;
+       height: 60px;
+       width: auto;
+       float: left;
+   }
+   .fla{
+       
+       margin-right : 1200px;
+    
+   }
+   
+   /* NAVBAR MENU */
+   
+   .menu {
+    display: flex; /*عشان الكلام يبقا جمب بعضو */
+    gap: 1em; /*المسافة بين الكلام */
+    font-size: 22px;
+color: #e7b428; } /*خط الحاجات الي في المينيو*/
+   
+   /*كل الي جي لتظبيط الحجم عالشكل*/
+   /*-----------------------nours java edit---------------------*/
+   .menu li:hover {
+    transition: 0.3s ease;}
+   .menu li {
+    padding:  14px;}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hometext{
+    margin-top: 400px;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5%;
+    color: black;
+}
+
+.hometext p{
+    font-size: 90%;
+    padding-top: 2%;
+}
+
+.homebtn{
+    padding-top: 2%;
+}
+
+.homebtn1{
+    background-color:#FEBF0F;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 24px;
+    box-shadow: 0px 3px #00000026;
+    transition: 0.3s;
+}
+
+.homebtn2{
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 24px;
+    box-shadow: 0px 3px #00000026;
+    transition: 0.3s;    
+}
+
+.homebtn1:hover{
+    cursor: pointer;
+    background-color: #d6a10e;
+}
+
+.homebtn2:hover{
+    cursor: pointer;
+    background-color:#000000;
+    color: #fff;
+}
+
+.btna1{
+    font-size: 120%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btna2{
+    font-size: 120%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.btna2:hover{
+    color: rgb(255, 255, 255);
+}
+
+.homelogo{
+    margin-top: 400px;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hlogo{
+    height: 238px;
+}
+
+.circlehome1{
+    width: 500px;
+    height: 500px;
+    background-color: #FDA700;
+    position: absolute;
+    animation-name: circlehome1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    top: 260px;
+    right: 1%;
+    border-radius: 50%;
+    z-index: -1;  
+}
+
+@keyframes circlehome1{
+    0% {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+}
+
+.circlehome2{
+    width: 100px;
+    height: 100px;
+    background-color: #FDA700;
+    position: absolute;
+    animation-name: circlehome2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    top: 400px;
+    left: 3.5%;
+    border-radius: 10px 40px 10px 40px;
+    z-index: -1;  
+    margin-bottom: 300px;
+}
+
+@keyframes circlehome2{
+    0% {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+}
+
+/*------------------------------------Mina-style--------------------------------------*/
+.mina{
+    margin-bottom: 450px;
+}
+
+.test,.new { display: flex;
+    justify-content: space-around;
+    }
+ 
+.photo {width: 1100;
+    margin-left: 200px;
+}
+
+/*------------------------------------Take-Action-style--------------------------------------*/
+.take_action{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000000;
+}
+
+.school{
+    height: 200px;
+}
+.rocket{
+    height: 200px;
+}
+.hands{
+    height: 200px;
+}
+
+.take_action_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+}
+
+.content{
+    text-align: center;
+}
+.content p{
+    margin-bottom: 20px;
+    padding: 1%;
+}
+
+.link_action:visited,
+.link_action:link{
+    background-color: #ffffff;
+    border:#FEBF0F solid 1px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.link_action:hover{
+    background-color: #FEBF0F;
+    color: #fff;
+}
+
+
+
+/*------------------------------------Mohamed-style--------------------------------------*/
+
+/* section mohamed */
+
+.Mohamed_section{
+    display: flex;
+    margin-inline-end: 300px;
+}
+
+/* text */
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.5%;
+    width: 75%;
+}
+
+/*customize (about us) */
+.about_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 50px; 
+    font-size: 250%;
+    /* font-family: "Times New Roman", Times, serif; */
+    color: #000000;
+}
+
+/*customize paragraph*/
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 190%;
+    /* font-family: cursive; */
+    line-height: 60px;
+    color: #000000;
+}
+
+
+/*customize Enactus Image*/
+.img_mohamed{
+    height: 200px;
+    display: flex;
+    margin-top: 500px;
+}
+
+
+/*customize circlehome4*/
+.circlehome4{
+    background-color: #FFA500;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2600px;
+    margin-bottom: 1000px;
+    right: 70%;
+    z-index: -1;
+    /*Animation of circlehome4 */
+    animation-name: circlehome4_animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circlehome4_animation{
+    0% {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+    
+}
+
+
+/*customize circlehome3*/
+.circlehome3{
+    background-color:#FFA500;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2450px;
+    left: 75%;
+    z-index: -1;
+    /*Circlehome3 animation*/
+    animation-name: circlehome3_animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin-bottom: 1000px;
+
+}
+
+@keyframes circlehome3_animation{
+    0% {
+        transform: rotate(360deg) translate(-1em) rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg) translate(-1em) rotate(0deg);
+    }
+}
+
+/*------------------------------------Our-Impact--------------------------------------*/
+.ourImpact h1{
+    color: #000000;
+    font-family: "Knockout 50", Sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.ourImpact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 500px;
+}
+
+.text_Impact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.IT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+.text_Impact p{
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+}
+.IT div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.IT p{
+    text-align: center;
+}
+.M{
+    padding-bottom: 20px;
+    font-weight:bold;
+}
+
